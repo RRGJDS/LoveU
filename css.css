@@ -1,0 +1,64 @@
+body{
+    background-color: rgb(23, 23, 23);
+    color: #d0d0d0;
+    /* color: rgb(146, 28, 28); */
+    /* 드래그방지 */
+    -ms-user-select: none; 
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    font-family: 'IM_Hyemin-Bold';
+}
+
+p{
+    font-size: 20px;
+}
+
+.story{
+    margin-top: 60px;
+    text-align: center;
+}
+
+.box{
+    margin: 0 auto;
+    line-height: 100%;
+    width : 850px;
+    border: 2px solid #f1f1f1;
+    margin-bottom: 20px;
+}
+
+button:focus{
+    outline: 0;
+}
+
+@font-face {
+    font-family: 'GangwonEduSaeeum_OTFMediumA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduSaeeum_OTFMediumA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+ 
+ .SG{
+ font-family: "GangwonEduSaeeum_OTFMediumA";
+ /* 조금 더 손글씨 */
+ }
+
+ @font-face {
+    font-family: 'HSGyeoulNoonkott20';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/HSGyeoulNoonkott20.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.sc{
+    font-family: 'HSGyeoulNoonkott20';
+    /* 공포? */
+}
+
+@font-face {
+    font-family: 'IM_Hyemin-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/IM_Hyemin-Bold.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
