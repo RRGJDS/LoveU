@@ -1,19 +1,144 @@
 body{
-    background-color: rgb(23, 23, 23);
-    color: #d0d0d0;
-    /* color: rgb(146, 28, 28); */
+    background-color: rgb(20, 20, 20);
+    color: rgb(231, 231, 231);
     /* 드래그방지 */
     -ms-user-select: none; 
     -moz-user-select: none;
     -khtml-user-select: none;
     -webkit-user-select: none;
     user-select: none;
-    font-family: 'IM_Hyemin-Bold';
 }
 
-p{
+@keyframes typing{
+    from{ width: 0; }
+  }
+
+p {
     font-size: 20px;
+    color: rgb(255, 255, 255);
+    margin: 10px;
 }
+
+button{
+    width:500px;
+    height: 40px;
+    margin-bottom: 8px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(31, 31, 31);
+    /* x축 y축 블러값 */
+    font-size: 16px;
+    /*모서리 둥글게*/
+    border-radius: 20px;
+    border: none;
+    /*부드럽게 변환*/
+    transition: 0.3s;
+    font-family: 'DungGeunMo';
+}
+
+input[type="text"], textarea {
+    height: 40px;
+    font-size: 20px;
+    font-family: 'KyoboHand';
+    background-color : #383838; 
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+    color: rgb(103, 207, 255);
+  }
+
+/*눌렀을 때*/
+button:focus{
+    outline: 0;
+}
+
+/*마우스를 올렸을 때*/
+button:hover{
+    background-color: rgb(216, 215, 215);
+    color: rgb(72, 96, 202);
+    /*마우스 누름 버튼모양으로*/
+    cursor: pointer;
+    font-size: large;
+}
+
+#endingmo{
+    width:200px;
+    height: 40px;
+    margin-bottom: 8px;
+    background-color: rgb(255, 213, 213);
+    color: rgb(31, 31, 31);
+    /* x축 y축 블러값 */
+    font-size: 16px;
+    /*모서리 둥글게*/
+    border-radius: 20px;
+    border: none;
+    /*부드럽게 변환*/
+    transition: 0.3s;
+    font-family: 'DungGeunMo';
+}
+
+#tnlt{
+    width:280px;
+    height: 20px;
+    margin-bottom: 8px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(48, 48, 48);
+    /* x축 y축 블러값 */
+    font-size: 16px;
+    /*모서리 둥글게*/
+    border-radius: 20px;
+    border: none;
+    /*부드럽게 변환*/
+    transition: 0.3s;
+    font-family: 'DungGeunMo';
+}
+
+#endingmo:focus{
+    outline: 0;
+}
+
+#audioP:focus{
+    outline: 0;
+}
+
+#endingmo:hover{
+    background-color: rgb(211, 150, 150);
+    color: rgb(55, 65, 109);
+    /*마우스 누름 버튼모양으로*/
+    cursor: pointer;
+}
+
+#audioP:hover{
+    background-color: rgb(141, 190, 190);
+    color: rgb(24, 31, 63);
+    /*마우스 누름 버튼모양으로*/
+    cursor: pointer;
+}
+
+.player{
+    width: 10%;
+}
+
+@font-face {
+    font-family: 'KyoboHand';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/KyoboHand.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+ 
+ #K_fonts{
+ font-family: "KyoboHand";
+ }
+
+ @font-face {
+    font-family: 'DungGeunMo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#D_fonts{
+    font-family: "DungGeunMo";
+    }
 
 .story{
     margin-top: 60px;
@@ -26,39 +151,4 @@ p{
     width : 850px;
     border: 2px solid #f1f1f1;
     margin-bottom: 20px;
-}
-
-button:focus{
-    outline: 0;
-}
-
-@font-face {
-    font-family: 'GangwonEduSaeeum_OTFMediumA';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduSaeeum_OTFMediumA.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
- 
- .SG{
- font-family: "GangwonEduSaeeum_OTFMediumA";
- /* 조금 더 손글씨 */
- }
-
- @font-face {
-    font-family: 'HSGyeoulNoonkott20';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/HSGyeoulNoonkott20.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-.sc{
-    font-family: 'HSGyeoulNoonkott20';
-    /* 공포? */
-}
-
-@font-face {
-    font-family: 'IM_Hyemin-Bold';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/IM_Hyemin-Bold.woff2') format('woff');
-    font-weight: normal;
-    font-style: normal;
 }
